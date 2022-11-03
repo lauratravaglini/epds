@@ -10,8 +10,7 @@ body {
     color: #474747;
 }
 
-/* nav */
-
+/* Style Nav */
 a {
     text-decoration: none;
     color: #474747;
@@ -64,16 +63,8 @@ nav #logo {
             flex: 3;
     position: relative;
 }
-  
-.chair {
-    height: 60%;
-    position: absolute;
-    top: 70%;
-    left: 70%;
-    transform: translate(-70%, -70%);
-}
 
-.s1, .s3 {
+.s1, .s3, .s5 {
     background: linear-gradient(to left top, #ada89f, #F9F7F4);
 }
 
@@ -88,7 +79,7 @@ nav #logo {
     -webkit-text-fill-color: transparent;
 }
 
-.s2, .s4 {
+.s2, .s4, .s6 {
     background: linear-gradient(to left bottom, #ada89f, #F9F7F4);
 }
 
@@ -100,6 +91,14 @@ nav #logo {
     background: #474747;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.chair {
+    height: 60%;
+    position: absolute;
+    top: 70%;
+    left: 70%;
+    transform: translate(-70%, -70%);
 }
 
 .description {
