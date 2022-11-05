@@ -57,10 +57,10 @@ nav ul {
     list-style: none;
   }
   
-nav #logo {
+.logo {
     -webkit-box-flex: 3;
-        -ms-flex: 3;
-            flex: 3;
+    -ms-flex: 3;
+        flex: 3;
     position: relative;
 }
 
@@ -93,12 +93,28 @@ nav #logo {
     -webkit-text-fill-color: transparent;
 }
 
-.chair {
+.c1 {
     height: 60%;
     position: absolute;
     top: 70%;
     left: 70%;
     transform: translate(-70%, -70%);
+}
+
+.c2 {
+    height: 45%;
+    position: absolute;
+    top: 75%;
+    left: 70%;
+    transform: translate(-75%, -70%);
+}
+
+.c3 {
+    height: 14%;
+    position: absolute;
+    top: 57%;
+    left: 70%;
+    transform: translate(-57%, -70%);
 }
 
 .description {
@@ -110,3 +126,6 @@ nav #logo {
 .description p {
     margin: 50px 0px;
 }
+
+
+/* Style Team */
