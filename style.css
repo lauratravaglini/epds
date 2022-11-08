@@ -10,6 +10,14 @@ body {
     color: #474747;
 }
 
+.scissor {
+    width: 35px; 
+    height: auto;
+    bottom: 3%;
+    left: 10%;
+    position: absolute;
+}
+
 /* Style Nav */
 a {
     text-decoration: none;
@@ -63,6 +71,7 @@ nav ul {
         flex: 3;
     position: relative;
 }
+
 
 .s1, .s3, .s5 {
     background: linear-gradient(to left top, #ada89f, #F9F7F4);
