@@ -59,7 +59,7 @@ nav ul {
     position: relative;
 }
 
-/* fine Style nav */
+/* Style Body */
 
 h1 {
     font-size: 48px;
@@ -71,46 +71,60 @@ h1 {
     -webkit-text-fill-color: transparent;
 }
 
+#homepage-body h1 {
+    font-size: 64px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    background: linear-gradient(to left, #757575, #474747);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 body {
     font-family: "Poppins", sans-serif;
+    font: 16px;
     color: #474747;
 }
 
 section {
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    scroll-snap-align: start;
+    text-align: center;
+    position: relative;
 }
 
-.main {
-    scroll-snap-type: y mandatory; /* or y proximity per metà */
-    overflow-y: scroll;
-    height: 100vh;
+.section {
+    opacity: 0;
+    transition: all 2s ease-out;
 }
 
-.s1, .s3, .s5 {
-    background: linear-gradient(to left top, #ada89f, #F9F7F4);
+.section.fade-in {
+    opacity: 1;
 }
 
-.s2, .s4, .s6 {
-    background: linear-gradient(to left bottom, #ada89f, #F9F7F4);
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-.one {
-    background: rgb(36, 164, 138);
+p {
+
 }
 
-.two {
-    background: rgb(211, 79, 79);
+/* Media Queries */
+
+@media only screen and (min-width: 480px) {
+
+}
+@media only screen and (min-width: 768) {
+   
+}
+@media only screen and (min-width: 1140) {
+    
 }
 
-.three {
-    background: rgb(67, 91, 175);
-}
 
-.four {
-    background: lightsalmon;
-}
+
