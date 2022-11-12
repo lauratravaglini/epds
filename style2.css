@@ -59,6 +59,7 @@ nav ul {
     position: relative;
 }
 
+/* Navigator */ 
 
 #dotted-line {
     height: 28%;
@@ -79,7 +80,7 @@ nav ul {
 .scroll1 {
     height: 4%;
     position: absolute;
-    top: 50%;
+    top: 45% !important; 
     left: 11.8%;
     transform: translate(-40%, -11.8%);
 }
@@ -87,7 +88,7 @@ nav ul {
 .scroll2 {
     height: 4%;
     position: absolute;
-    top: 50%;
+    top: 50% !important;
     left: 11.8%;
     transform: translate(-40%, -11.8%);
 }
@@ -95,7 +96,7 @@ nav ul {
 .scroll3 {
     height: 4%;
     position: absolute;
-    top: 60%;
+    top: 55% !important;
     left: 11.8%;
     transform: translate(-40%, -11.8%);
 }
@@ -103,9 +104,14 @@ nav ul {
 .scroll4 {
     height: 4%;
     position: absolute;
-    top: 60%;
+    top: 60% !important;
     left: 11.8%;
     transform: translate(-40%, -11.8%);
+}
+
+#homepage-img {
+    bottom: ;
+    left: 5%;
 }
 
 
@@ -113,21 +119,11 @@ nav ul {
 
 h1 {
     font-size: 48px;
+    position: absolute;
     top: 10%;
     left: 50%;
     transform: translate(-50%, -10%);
     background: #474747;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-#homepage-body h1 {
-    font-size: 64px;
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -20%);
-    background: linear-gradient(to left, #757575, #474747);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -160,9 +156,6 @@ section {
     transform: translate(-50%, -50%);
 }
 
-p {
-
-}
 
 /* Media Queries */
 
