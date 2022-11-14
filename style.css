@@ -4,11 +4,58 @@
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
   }
-  
+
+  /*
 body {
-    font-family: "Poppins", sans-serif;
-    color: #474747;
+    font-family: "Monserrat", sans-serif;
+    font-weight: 100;
+    letter-spacing: 3px;
+    color: black;
+    overflow: scroll; 
 }
+
+*/
+
+body {
+    font-family: 'Sono', sans-serif;
+    font-weight: 200;
+    letter-spacing: 3px;
+    color: black;
+    overflow: scroll; 
+    font-size: 24px;
+}
+
+p {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+
+h1 {
+    font-size: 100px;
+    font-weight: 900;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h2 {
+    font-size: 60px;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -10%);
+}
+
+h3 {
+    font-size: 50px;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -10%);
+}
+
 
 .scissor {
     width: 35px; 
@@ -21,11 +68,7 @@ body {
 /* Style Nav */
 a {
     text-decoration: none;
-    color: #474747;
-}
-
-h2 {
-    color: #474747;
+    color: black;
 }
 
 .nav-container {
@@ -85,23 +128,13 @@ nav ul {
     position: relative;
     overflow: visible;
 }
-.s1, .s3, .s5 {
-    background: linear-gradient(to left top, #ada89f, #F9F7F4);
-}
 
-.section h1 {
-    font-size: 64px;
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -20%);
-    background: linear-gradient(to left, #757575, #474747);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.s1, .s3, .s5 {
+    background: white;
 }
 
 .s2, .s2bis, .s4, .s6 {
-    background: linear-gradient(to left bottom, #ada89f, #F9F7F4);
+    background: white;
 }
 
 .s2 h1 {
@@ -109,9 +142,6 @@ nav ul {
     top: 10%;
     left: 50%;
     transform: translate(-50%, -10%);
-    background: #474747;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 
 #momaroom {
@@ -127,7 +157,7 @@ nav ul {
     position: absolute;
     top: 68%;
     left: 67%;
-    transform: translate(-68%, -67%);
+    transform: translate(-67%, -68%);
 }
 
 .c3 {
@@ -135,18 +165,133 @@ nav ul {
     position: absolute;
     top: 57%;
     left: 70%;
-    transform: translate(-57%, -70%);
+    transform: translate(-70%, -57%);
 }
 
-.description1 {
+.description4, .description8 {
+    align-content: center;
+    position: relative;
+    padding: 10%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.description4 p, .description8 p {
+    padding-right: 15%;
+    padding-left: 15%;
+}
+
+#counters {
+    padding-top: 2%;
+    padding-right: 15%;
+    padding-left: 15%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+    justify-content: space-around;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+}
+
+figcaption{
+    padding-top: 8%;
+    font-size: 40px;
+}
+
+#ctate {
+    padding-top: 14%;
+}
+
+/* Style Museum */
+
+#img2 {
+    height: 100%;
     position: absolute;
-    margin: 10% 15%;
-    width: 50%;
-    font-size: 20px;
-}
-.description1 p {
-    text-align: justify;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -10%);
+    z-indez: -1;
 }
 
+#img2p {
+    height: 50%;
+    position: absolute;
+    top: 72%;
+    left: 50%;
+    transform: translate(-50%, -72%);
+    z-indez: -1;
 
-/* Style Team */
+}
+
+.description2 {
+    align-content:center;
+    position: absolute;
+    width: 42%;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -15%);
+    text-align: center;
+}
+
+.description2 p {
+}
+
+.description5 {
+    align-content:center;
+    position: absolute;
+    width: 42%;
+    top: 50%;
+    left: 23%;
+    transform: translate(-23%, -50%);
+    text-align: right;
+}
+
+#img5 {
+    height: 45%;
+    position: absolute;
+    top: 90%;
+    left: 90%;
+    transform: translate(-90%, -90%);
+}
+
+.description6 {
+    align-content:center;
+    position: absolute;
+    width: 42%;
+    top: 50%;
+    left: 78%;
+    transform: translate(-78%, -50%);
+    text-align: left;
+}
+
+#img6 {
+    height: 45%;
+    position: absolute;
+    top: 90%;
+    left: 10%;
+    transform: translate(-10%, -90%);
+}
+
+.description7 {
+    align-content: center;
+    position: absolute;
+    width: 60%;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    text-align: center;
+}
+
+#img7 {
+    height: 45%;
+    position: absolute;
+    top: 90%;
+    left: 10%;
+    transform: translate(-10%, -90%);
+}
+
