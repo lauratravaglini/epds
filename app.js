@@ -1,11 +1,21 @@
+
 new fullpage("#fullpage", {
   autoScrolling: true,
   navigation: true,
+  
+});
+
+
+/*
+
+new fullpage("#fullpage", {
+  autoScrolling: true,
+  navigation: false,
   onLeave: (origin, destination, direction) => {
     const section = destination.item;
     const title = section.querySelector("h1");
     const tl = new TimelineMax({ delay: 0.5 });
-    tl.fromTo(title,0.5, {y: "50", opacity: 0}, {y:0, opacity: 1})
+    tl.fromTo(title,0.5, {y: "30", opacity: 0}, {y:0, opacity: 1})
 
     if(destination.index === 1){
       const collage1 = document.querySelector(".c1");
@@ -22,6 +32,7 @@ new fullpage("#fullpage", {
     }
   }
 });
+*/
 
 new PureCounter({
   // Setting that can't' be overriden on pre-element
