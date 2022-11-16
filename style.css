@@ -218,12 +218,22 @@ figcaption{
     z-indez: -1;
 }
 
-#img2p {
-    height: 50%;
+#img2b {
+    height: 38%;
     position: absolute;
-    top: 72%;
-    left: 50%;
-    transform: translate(-50%, -72%);
+    top: 60%;
+    left: 40%;
+    transform: translate(-40%, -60%);
+    z-indez: -1;
+
+}
+
+#img2c {
+    height: 40%;
+    position: absolute;
+    top: 75%;
+    left: 60%;
+    transform: translate(-60%, -75%);
     z-indez: -1;
 
 }
@@ -232,14 +242,16 @@ figcaption{
     align-content:center;
     position: absolute;
     width: 42%;
-    top: 15%;
+    top: 35%;
     left: 50%;
-    transform: translate(-50%, -15%);
+    transform: translate(-50%, -35%);
     text-align: center;
 }
 
-.description2 p {
+#p2, #p3, #p4 {
+    margin-top: 8%;
 }
+
 
 .description5 {
     align-content:center;

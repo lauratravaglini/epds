@@ -1,9 +1,28 @@
+TweenMax.defaultEase = Linear.easeOut;
+
 new fullpage("#fullpage", {
   autoScrolling: true,
   navigation: true,
   onLeave: (origin, destination, direction) => {
     const section = destination.item;
-    console.log(destination.item);
+    const tl = new TimelineMax({ delay: 0.5});
+    
+    if(destination.index == 1){
+      const text1 = document.querySelector("#p1");
+      const text2 = document.querySelector("#p2");
+      const text3 = document.querySelector("#p3");
+      const text4 = document.querySelector("#p4");
+      const bg = document.querySelector("#img2");
+      const bg2 = document.querySelector("#img2b");
+      const bg3 = document.querySelector("#img2c");
+
+      tl.fromTo(text1, 2, {opacity: 0}, {opacity: 1})
+      .fromTo(bg2, 0.5, {opacity: 1}, {opacity: 0})
+      .fromTo(text2, 2, {opacity: 0}, {opacity: 1})
+      .fromTo(bg3, 0.5, {opacity: 1}, {opacity: 0})
+      .fromTo(text3, 2, {opacity: 0}, {opacity: 1})
+      .fromTo(text4, 2, {opacity: 0}, {opacity: 1});
+    }
   }
   
   
