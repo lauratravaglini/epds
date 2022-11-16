@@ -22,12 +22,26 @@ new fullpage("#fullpage", {
       .to(text3, 2, {opacity: 1})
       .to(text4, 2, {opacity: 1});
     }
+
+    if(destination.index === 4){
+      const moma = document.querySelector("#moma");
+      const tate = document.querySelector("#tate");
+      const cmoma = document.querySelector("#cmoma");
+      const ctate = document.querySelector("#cmtate");
+      
+      tl.fromTo(moma, 1, {opacity: 1}, {opacity: 1})
+      .fromTo(tate, 1, {opacity: 0}, {opacity: 1})
+      .fromTo(cmoma, 2, {opacity: 0}, {opacity: 1})
+      .fromTo(ctate, 2, {opacity: 0}, {opacity: 1});
+    }
   }
     
 });
 
 
 /*
+
+{y: "30", opacity: 0}, {y:0, opacity: 1}
 
 if(destination.index == 3){
       const moma = document.querySelector("#moma");
