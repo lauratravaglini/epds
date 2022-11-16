@@ -23,16 +23,23 @@ new fullpage("#fullpage", {
       .to(text4, 2, {opacity: 1});
     }
 
+    if(destination.index === 1){
+      const par1 = document.querySelector("#par1");
+      const par2 = document.querySelector("#par2");
+      const par3 = document.querySelector("#par3");
+      
+      tl.to(par1, 0.5, {opacity: 1})
+      .to(par2, 1, {opacity: 1})
+      .to(par3, 2, {opacity: 1});
+
+    }
+
     if(destination.index === 4){
       const moma = document.querySelector("#moma");
       const tate = document.querySelector("#tate");
-      const cmoma = document.querySelector("#cmoma");
-      const ctate = document.querySelector("#cmtate");
+      const counters = document.querySelector("#counters");
       
-      tl.fromTo(moma, 1, {opacity: 1}, {opacity: 1})
-      .fromTo(tate, 1, {opacity: 0}, {opacity: 1})
-      .fromTo(cmoma, 2, {opacity: 0}, {opacity: 1})
-      .fromTo(ctate, 2, {opacity: 0}, {opacity: 1});
+      tl.fromTo(counters, 2, {y: "30", opacity: 0}, {y:0, opacity: 1})
     }
   }
     
@@ -42,18 +49,6 @@ new fullpage("#fullpage", {
 /*
 
 {y: "30", opacity: 0}, {y:0, opacity: 1}
-
-if(destination.index == 3){
-      const moma = document.querySelector("#moma");
-      const tate = document.querySelector("#tate");
-      const cmoma = document.querySelector("#cmoma");
-      const ctate = document.querySelector("#cmtate");
-      
-      tl.fromTo(moma, 0.5, {x: "100%"}, {x: "-50%"})
-      .fromTo(tate, 0.5, {x: "100%"}, {x: "50%"})
-      .fromTo(cmoma, 2, {opacity: 0}, {opacity: 1})
-      .fromTo(ctate, 2, {opacity: 0}, {opacity: 1});
-    }
 
 
 if(destination.index == 3){
