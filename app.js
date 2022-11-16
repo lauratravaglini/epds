@@ -12,7 +12,6 @@ new fullpage("#fullpage", {
       const text2 = document.querySelector("#p2");
       const text3 = document.querySelector("#p3");
       const text4 = document.querySelector("#p4");
-      const bg = document.querySelector("#img2");
       const bg2 = document.querySelector("#img2b");
       const bg3 = document.querySelector("#img2c");
 
@@ -23,13 +22,39 @@ new fullpage("#fullpage", {
       .fromTo(text3, 2, {opacity: 0}, {opacity: 1})
       .fromTo(text4, 2, {opacity: 0}, {opacity: 1});
     }
+
   }
   
-  
+    
 });
 
 
 /*
+
+if(destination.index == 3){
+      const moma = document.querySelector("#moma");
+      const tate = document.querySelector("#tate");
+      const cmoma = document.querySelector("#cmoma");
+      const ctate = document.querySelector("#cmtate");
+      
+      tl.fromTo(moma, 0.5, {x: "100%"}, {x: "-50%"})
+      .fromTo(tate, 0.5, {x: "100%"}, {x: "50%"})
+      .fromTo(cmoma, 2, {opacity: 0}, {opacity: 1})
+      .fromTo(ctate, 2, {opacity: 0}, {opacity: 1});
+    }
+
+
+if(destination.index == 3){
+    const moma = document.querySelector("#moma");
+    const tate = document.querySelector("#tate");
+    const cmoma = document.querySelector("#cmoma");
+    const ctate = document.querySelector("#cmtate");
+    
+    tl.fromTo(moma, 0.5, {x: "100%"}, {x: "-40%"})
+    .fromTo(tate, 0.5, {x: "100%"}, {x: "-40%"})
+    .fromTo(cmoma, 2, {opacity: 0}, {opacity: 1})
+    .fromTo(ctate, 2, {opacity: 0}, {opacity: 1});
+  }
 
 new fullpage("#fullpage", {
   autoScrolling: true,

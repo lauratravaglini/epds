@@ -5,17 +5,6 @@
             box-sizing: border-box;
   }
 
-  /*
-body {
-    font-family: "Monserrat", sans-serif;
-    font-weight: 100;
-    letter-spacing: 3px;
-    color: black;
-    overflow: scroll; 
-}
-
-*/
-
 body {
     font-family: 'Sono', sans-serif;
     font-weight: 200;
@@ -252,6 +241,33 @@ figcaption{
     margin-top: 8%;
 }
 
+#par1 {
+    position: absolute;
+    width: 42%;
+    top: 18%;
+    left: 25%;
+    transform: translate(-25%, -18%);
+    text-align: left;
+}
+
+#par2 {
+    position: absolute;
+    width: 42%;
+    top: 50%;
+    left: 80%;
+    transform: translate(-80%, -50%);
+    text-align: right; 
+}
+
+#par3 {
+    position: absolute;
+    width: 42%;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -75%);
+    text-align: left;
+    font-size: 40px;
+}
 
 .description5 {
     align-content:center;
