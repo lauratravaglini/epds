@@ -252,11 +252,11 @@ figcaption{
 }
 
 #img5 {
-    height: 45%;
+    height: 85%;
     position: absolute;
-    top: 90%;
-    left: 90%;
-    transform: translate(-90%, -90%);
+    top: 50%;
+    left: 85%;
+    transform: translate(-85%, -50%);
 }
 
 .description6 {
@@ -270,11 +270,11 @@ figcaption{
 }
 
 #img6 {
-    height: 45%;
+    height: 85%;
     position: absolute;
-    top: 90%;
-    left: 10%;
-    transform: translate(-10%, -90%);
+    top: 50%;
+    left: 18%;
+    transform: translate(-18%, -50%);
 }
 
 .description7 {
