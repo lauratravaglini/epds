@@ -1,6 +1,10 @@
 new fullpage("#fullpage", {
   autoScrolling: true,
-  navigation: true
+  navigation: true,
+  onLeave: (origin, destination, direction) => {
+    const section = destination.item;
+    console.log(destination.item);
+  }
   
   
 });
