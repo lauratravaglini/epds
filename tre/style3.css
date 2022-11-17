@@ -1,127 +1,48 @@
-* {
-  margin: 0;
+body {
+  background-color: #131316 ;
+  color: #ffffff;
+  font-family: 'Sono', sans-serif;
   padding: 0;
-  box-sizing: border-box;
-  color: black;
-  font-family: "Poppins", sans-serif;
+  margin: 0;
 }
 
-nav {
-  position: absolute;
-  width: 100%;
-  display: flex;
-  margin: auto;
-  min-height: 10vh;
-  padding: 3rem 10rem;
-  display: -webkit-box;
-display: -ms-flexbox;
-display: flex;
--webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-        justify-content: space-between;
--webkit-box-align: center;
-    -ms-flex-align: center;
-        align-items: center;
-}
-
-
-nav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-  color: #474747;
-}
-
-.logo {
-  -webkit-box-flex: 3;
-  -ms-flex: 3;
-      flex: 3;
-  position: relative;
-}
-
-
-.container {
-  height: 100vh;
-}
-.container img {
-  top: 49%;
-  left: 50%;
-  transform: translate(-49%, -50%);
-  position: absolute;
-  z-index: -1;
-}
-
-#double {
-  position: relative;
-}
-
-#double p{
-  text-align: center;
-  padding: 40% 20%;
-}
-
-.background {
-  opacity: 0;
-}
-
-.room {
-  top: 47.1% !important;
-  left: 49% !important;
-}
-
-.grid {
-  top: 55% !important;
-  opacity: 0;
-}
-
-.prosp {
-  top: 50% !important;
-  left: 49.9% !important;
-  opacity: 0;
-}
-
-.man {
-  bottom: 5%;
-  right: 30% !important;
-  opacity: 0;
-}
-
-
-.main-title {
-  position: absolute;
-  top: 30%;
-  left: 50%;
-  font-size: 6rem;
-  transform: translate(-50%, -30%);
-}
-
-.content {
-  width: 100%;
-  background: rgb(24, 24, 24);
+section {
+  display: grid;
+  place-items: center;
+  align-content: center;
   min-height: 100vh;
-  z-index: 2;
-  position: absolute;
-}
-.content-images {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  min-height: 60vh;
-  text-align: center;
 }
 
-.text {
-  padding: 2rem 20rem;
-  font-size: 1.1rem;
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+
+@media(prefers-reduced-motion) {
+  .hidden {
+    transition: none;
+  }
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+.logos {
+  display: flex;
+}
+
+.logo:nth-child(2) {
+  transition-delay: 200ms;
+}
+.logo:nth-child(3) {
+  transition-delay: 400ms;
+  
+}
+.logo:nth-child(4) {
+  transition-delay: 600ms;
 }

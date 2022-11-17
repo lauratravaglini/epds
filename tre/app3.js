@@ -1,52 +1,14 @@
-let controller = new ScrollMagic.Controller();
-let timeline = new TimelineMax();
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    console.log(entry)
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+    } else {
+      entry.target.classList.remove("show");
+    }
+  });
 
-/*
-timeline
-  .to(".rock", 10, { y: -300 })
-  .to(".girl", 10, { y: -200 }, "-=10")
-  .fromTo(".bg1", { y: -50 }, { y: 0, duration: 10 }, "-=10")
-  .to(".content", 10, { top: "0%" }, "-=10")
-  .fromTo(".content-images", { opacity: 0 }, { opacity: 1, duration: 3 })
-  .fromTo(".text", { opacity: 0 }, { opacity: 1, duration: 3 });
+});
 
-let scene = new ScrollMagic.Scene({
-  triggerElement: "section",
-  duration: "300%",
-  triggerHook: 0,
-})
-  .setTween(timeline)
-  .setPin("section")
-  .addTo(controller);
-*/
-
-timeline.to("#pp", 2, {opacity: 0})
-
-let scene = new ScrollMagic.Scene({
-  triggerElement: "section",
-  duration: "100%",
-  triggerHook: 0,
-})
-  .setTween(timeline)
-  .addTo(controller);
-
-
-
-/*
-.to(".man", 2, {opacity: 1})
-.to(".grid", 3, {opacity: 1})
-.to(".room", 4, {opacity: 0})
-.to(".pp", 4, {opacity: 0})
-.to(".prosp", 4, {opacity: 1})
-.to(".background", 4, {opacity: 1})
-
-
-let scene = new ScrollMagic.Scene({
-  triggerElement: "#double",
-  duration: "100%",
-  triggerHook: 0,
-})
-  .setTween(timeline)
-  .addTo(controller);
-
-*/
+const hiddenElements = document.querySelectorAll(".hidden");
+hiddenElements.forEach((el) => observer.observe(el));
